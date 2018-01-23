@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('media/artboard 1.svg');
+	background-size: cover;
+	width: 100vw;
+	overflow: hidden;
+	position: relative; 
+	font-family: 'times new roman';
+}
+
+.container {
+	height: 100%;
+}
+.header {
+	display: flex;
+	width: 100vw;
+	color: white;	
+}
+
+.header .logo {
+	padding-left: 2vw;
+	flex-basis: 90%;
+}
+
+.header .logo img {
+	height: 6vh;
+	padding: 3vh 5px;
+}
+
+.header .list {
+	display: flex;
+	margin-right: 5vw;
+}
+
+.header .list div {
+	padding: 3vh 5vw;
+	width: 7vw;
+	font-size: 5vh;
+	cursor: pointer;
+	transition: font-size 0.1s linear;
+}
+
+.header .list .link:hover {
+	font-size: 5.2vh;
+}
+
+
+
+
+
+.content {
+	width: 100vw;
+	height: 60vh;
+}
+
+.content .home {
+	position: absolute;
+	left: 0vw;
+	transition: left 0.2s linear;  
+}
+.content .home .heading {
+	font-size: 10vh;
+	margin-left: 4vw;
+	margin-top: 4vw;
+	color: white;
+}
+
+.content .register {
+	font-size: 6vw;
+	margin: 5vh 3vw;
+	color: #7064d6;
+	text-align: center;
+	background: white;
+	border-radius: 5vw;
+	width: 40vw; 
+	padding: 4px 0;
+	cursor: pointer;
+}
+
+
+
+.content .rules {
+	color: white;
+	position: absolute;
+	left: 100vw;
+	width: 100vw;
+	margin-top: 5vh;
+	padding: 0 2vw;
+	display: none;
+	transition: left 0.2s linear; 
+}
+
+.content .rules .title {
+	font-size: 10vh;
+	margin: 2vh 0;
+	text-align: center;
+}
+
+.content .rules .info {
+	font-size: 3vh;
+	margin-right: 3vw;
+}
+
+.content .contact{
+	text-align: center;
+	color: white;
+	left: 100vw;
+	width: 100vw;
+	position: absolute;
+	margin-top: 4vh;
+	display: none;
+	transition: left 0.2s linear; 
+}
+.content .contact .title {
+	font-size: 8vh;
+	margin: 2vh 0;
+}
+
+.content .contact .info {
+	font-size: 4vh;
+	margin: 2vh 0;
+}	
+
+.mobHeader, .sideNav {
+	display: none;
+}
+
+
+
+
+@media all and (max-width: 900px) {
+
+	.header {
+		display: none;
+	}
+
+
+	.mobHeader{
+		height: 15vh;
+		width: 100vw;
+		display: block;
+	}
+
+	.logoIcon{
+		float:right;
+		height: 100%;
+	}
+
+	.logoIcon img{
+		height: 38%;
+		padding: 2vh 2vh 0 0;
+	}
+
+	.menuIcon {
+		height: 70%;
+		float: left;
+		margin: 2vh 0 0 5vw;
+	}
+
+	.menuIcon img{
+		height: 60%;
+	}
+
+
+	.sideNav {
+		position: absolute;
+		top: 0;
+		left: -120vw;
+		height: 100vh;
+		width: 120vw;
+		background: black;
+		z-index:2;
+		transition: left 0.5s linear;
+		display: block;	
+	}
+
+	.navHeader {
+		height: 15vh;
+		width: 100%;
+	}
+	.navContent {
+		margin-left: 8vw;
+	}
+
+	.navContent .link {
+		font-size: 5vh;
+		color: white;
+		padding-top: 3vh;
+		cursor: pointer;
+	}
+
+}

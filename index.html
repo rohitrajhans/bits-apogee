@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8" name="viewport" content=" width = device-width, initial-scale = 1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class = "container" >
+		
+		<div class = "header">
+			
+			<div class = "logo">
+			<img src="media/logo1.png">
+			<img src="media/logo2.png">
+			</div>
+
+			<div class=	"list">
+				<div class="link" onclick="clickHome()"> Home </div>
+				<div class="link" onclick="clickRules()"> Rules </div>
+				<div class="link" onclick="clickContact()"> Contact</div>
+		  	</div>
+
+		</div>	
+			
+		<!-- For Mobile -->
+
+		<div class="mobHeader"> 
+			<div class="menuIcon" onclick="openNav()"> <img src="media/menu.png"> </div>
+			<div class="logoIcon">
+				<img src="media/logo1.png"> 
+				<img src="media/logo2.png">
+			</div>
+		</div>	 
+	
+
+		<div class="sideNav">
+			<div class="navHeader">
+				<div class="menuIcon" onclick="closeNav()"> <img src="media/arrow.png"> </div>
+				<div class="logoIcon">
+					<img src="media/logo1.png"> 
+					<img src="media/logo2.png">
+				</div>
+			</div>
+			<div class="navContent" >
+				<div class="link" onclick="clickHome1()"> Home </div>
+				<div class="link" onclick="clickRules1()"> Rules </div>
+				<div class="link" onclick="clickContact1()"> Contact </div>
+
+			</div>
+		</div>	
+
+
+		
+		<div class= "content">
+			<div class="home">
+				<div class="heading"><b> APOGEE <br> INNOVATION CHALLENGE </b> </div>
+
+				<div class="register button"> REGISTER </div>
+
+			</div>
+
+			<div class=" rules">
+				<div class="title"> RULES </div>
+				<div class="info"> 
+				
+				PARTICIPANTS ARE TO FORM TEAMS OF 2-4 STUDENTS. <br> THE PARTICIPANTS MUST UPLOAD THEIR SOLUTIONS ON THE PORTAL GIVEN IN THE APOGEE WEBSITE BY 17th FEB. <br> THE PARTICIPANTS MUST PRESENT THEIR SOLUTIONS IN THE FORM OF A PRESENTATION TO THE COMPANY. <br> INTERNSHIPS AND POSSIBLE JOB OFFERS AWAIT THE WINNERS [ONE OR MORE FROM EACH CATEGORY] ALONG WITH CASH PRIZES AND GOODIES. 
+
+
+				</div>
+			</div>	
+
+			<div class="contact">
+				<div class ="title" > CONTACT </div>
+				<div class="info"> ROHIT RAJHANS <br> +91-9999111100 </div>	
+			</div>
+		</div>
+			
+		<div class="footer">
+		</div>
+
+	</div>		
+
+	<script type="text/javascript">
+		
+		var home = document.getElementsByClassName("home")[0];
+		var rules = document.getElementsByClassName("rules")[0];
+		var contact = document.getElementsByClassName("contact")[0]; 
+
+		function clickRules() {
+			setTimeout(function() {
+			home.style.left = "100vw";
+			rules.style.left = "0vw";
+			contact.style.left = "100vw"; }, 1000);
+			home.style.display = "none";
+			contact.style.display = "none";
+			rules.style.display = "block";
+		}
+
+		function clickHome() {
+			setTimeout(function() {
+			home.style.left = "0vw";
+			rules.style.left = "100vw";
+			contact.style.left = "100vw"; }, 1000);
+			home.style.display = "block";
+			contact.style.display = "none";
+			rules.style.display = "none";
+		}
+
+		function clickContact() {
+			setTimeout(function() {
+			home.style.left = "100vw";
+			rules.style.left = "100vw";
+			contact.style.left = "0vw"; }, 1000);
+			home.style.display = "none";
+			contact.style.display = "block";
+			rules.style.display = "none";
+		}
+
+		function closeNav(){
+			document.getElementsByClassName("sideNav")[0].style.left = "-120vw";
+		}
+
+		function openNav(){
+			document.getElementsByClassName("sideNav")[0].style.left = "0vw";
+		}
+
+
+
+		function clickRules1() {
+			setTimeout(function() {
+			home.style.left = "100vw";
+			rules.style.left = "0vw";
+			contact.style.left = "100vw"; }, 1000);
+			home.style.display = "none";
+			contact.style.display = "none";
+			rules.style.display = "block";
+			document.getElementsByClassName("sideNav")[0].style.left = "-120vw";
+		}
+
+		function clickHome1() {
+			setTimeout(function() {
+			home.style.left = "0vw";
+			rules.style.left = "100vw";
+			contact.style.left = "100vw"; }, 1000);
+			home.style.display = "block";
+			contact.style.display = "none";
+			rules.style.display = "none";
+			document.getElementsByClassName("sideNav")[0].style.left = "-120vw";
+		}
+
+		function clickContact1() {
+			setTimeout(function() {
+			home.style.left = "100vw";
+			rules.style.left = "100vw";
+			contact.style.left = "0vw"; }, 1000);
+			home.style.display = "none";
+			contact.style.display = "block";
+			rules.style.display = "none";
+			document.getElementsByClassName("sideNav")[0].style.left = "-120vw";
+		}
+
+	</script>
+
+</body>
+</html>
