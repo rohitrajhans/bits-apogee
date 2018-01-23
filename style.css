@@ -174,7 +174,7 @@ body {
 		width: 120vw;
 		background: black;
 		z-index:2;
-		transition: left 0.5s linear;
+		transition: left 0.5s cubic-bezier(0.23, 1, 0.28, 1.23);
 		display: block;	
 	}
 
@@ -182,8 +182,12 @@ body {
 		height: 15vh;
 		width: 100%;
 	}
+
+	.navHeader .menuIcon {
+		margin-left: 15vw;
+	}
 	.navContent {
-		margin-left: 8vw;
+		margin-left: 15vw;
 	}
 
 	.navContent .link {
