@@ -4,7 +4,8 @@
 }
 
 body {
-	background: url('artboard 1.svg');
+	background: #706bef;
+	background: url('Artboard 1.svg');
 	background-size: cover;
 	width: 100vw;
 	overflow: hidden;
