@@ -4,7 +4,7 @@
 }
 
 body {
-	background: url('media/artboard 1.svg');
+	background: url('artboard 1.svg');
 	background-size: cover;
 	width: 100vw;
 	overflow: hidden;
@@ -190,6 +190,9 @@ body {
 		margin-left: 15vw;
 	}
 
+	.sideNav .logoIcon {
+		margin-right: 10vw;
+	}
 	.navContent .link {
 		font-size: 5vh;
 		color: white;
